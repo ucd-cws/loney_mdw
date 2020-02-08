@@ -39,7 +39,7 @@ vignettes/*.pdf
 .Renviron
 
 # other stuff
-.log
-.tex
-.html
+*.log
+*.tex
+*.html
 *_cache/*
