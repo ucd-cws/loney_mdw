@@ -1,0 +1,62 @@
+---
+title: "Loney Meadow Restoration Project Monitoring: Loney Meadow Amphibian Surveys 2019"
+author:
+- familyname: Peek
+  othernames: Ryan
+  title: 
+  qualifications: PhD
+  email: rapeek@ucdavis.edu
+  correspondingauthor: true
+- familyname: Yarnell
+  othernames: Sarah
+  title: 
+  qualifications: PhD
+department: Center for\newline Watershed Sciences
+organization: SYRCL
+bibliography: paperpile_amphibs.bib
+biblio-style: authoryear-comp
+linestretch: 1.2
+output:
+  CWSTemplates::report:
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    includes:
+      in_header: preamble.tex
+    keep_tex: yes
+    number_sections: no
+    citation_package: biblatex
+    toc: false
+    csl: https://raw.githubusercontent.com/citation-style-language/styles/master/ecology.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+# Make sure you have the latest versions of rmarkdown and bookdown installed
+library(ggplot2)
+# get the bib file
+library(fs)
+fs::file_copy("~/Downloads/bibs/paperpile_amphibs.bib", "paperpile_amphibs.bib", overwrite = TRUE)
+
+```
+
+
+## OVERVIEW
+
+Loney Meadow and the surrounding meadow complex were surveyed for the presence of amphibian species of interest as part of a larger effort to document habitat conditions in the Loney Meadow area prior/post to stream bank restoration activities.  Surveys were conducted throughout Loney Meadow and adjacent wetland meadow complexes to determine presence and life stages of amphibian species. Observations were compared across surveys from pre and post stream bank restoration activities. Repeat visual encounter surveys were conducted prior to restoration in June of 2015 and July of 2016, and post restoration in July and August of 2019. 
+
+```{r, fig1, fig.cap="Surveys in Main Meadow", fig.align='center', out.width='50%', message=FALSE, warning=FALSE}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1160425.JPG"))
+
+```
+
+Meadow and stream channel surveys were conducted in Loney Meadow following survey protocols in @Heyer1994-dr. Both day and night surveys were conducted with four surveyors using combined methods such as visual observation, dip netting, and auditory surveys to maximize potential detection of herpetofauna. During each survey, surveyors walked across the meadow at equal intervals, zig-zagging along a transect corresponding to the longest meadow axis. All visible and accessible stream channels were also walked in pairs or in groups of three, with surveyors on each bank and one or two surveyors in the channel. In both the meadow and stream channels, surveyors used dipnets and D-nets to sweep vegetation and aquatic habitat for individuals. Upon observation of species, locations were marked and survey time was stopped during processing and identification. Survey effort was calculated for each survey by the total survey time multiplied by the number of surveyors. Prior to and following surveys, all equipment and field gear was decontaminated following accepted protocols [@Daszak2001-in; @Johnson2003-yc; @Phillott2010-mt].
+
+## RESULTS
+
+Surveys for amphibians were conducted in Loney Meadow on July 16 and August 21, 2019 (Table 1). Teams of two or three observers walked along wetted perimeters, stream corridors, and four or more observers were used in wet meadow areas with no clear channel. 
+
+Surveyors expended a total search effort of 10.25 hours on July 25 and 10.25 hours on July 26 at times ranging from mid-morning to early-evening (Table 2).
+
+The majority of the surveys found only Pacific chorus frogs (Pseudacris regilla) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (Ambystoma macrodactylum sigillatum) [AMMASI] larvae were observed in 2016. The AMMASI larvae were observed in a small unnamed pond nestled north of Loney Meadow, at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the pond (see Figure 1). The only other herpetofauna observed were Sierra gartersnakes (Thamnophis couchii) [THCO]. Both of these species were observed in multiple locations within the area, similar to 2015. We also identified brown trout and Eastern brook trout throughout Texas Creek in Loney Meadow.  Nothing was observed in 2015 that was not observed in 2016

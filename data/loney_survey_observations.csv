@@ -1,0 +1,30 @@
+﻿Species,Species_code,Stage,number_obs,utm_e_m,utm_n_m,Year,Month,Site
+Pseudacris regilla,PSRE,Adult,1,702979,4366184,2015,June,Texas Creek South
+Pseudacris regilla,PSRE,Eggs,30,702776,4366143,2015,June,East Pond
+Pseudacris regilla,PSRE,Larvae,>100,703541,4366324,2015,June,Bullpen Lake
+Thamnophis couchii,THCO,Adult,1,703541,4366324,2015,June,Bullpen Lake
+Thamnophis elegans,THEL,Adult,1,702979,4366184,2015,June,Texas Creek South
+Pseudacris regilla,PSRE,Larvae,20,701790,4366308,2015,June,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,10,701835,4366209,2015,June,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,15,701908,4366158,2015,June,Texas Creek North
+Pseudacris regilla,PSRE,Adult,1,701739,4366048,2015,June,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,>100,701920,4366737,2016,July,Stock Pond
+Pseudacris regilla,PSRE,Larvae,,701749,4366162,2016,July,Texas Creek North
+Pseudacris regilla,PSRE,Young of year,,701749,4366162,2016,July,Texas Creek North
+Pseudacris regilla,PSRE,Adult,1,701749,4366162,2016,July,Texas Creek North
+Thamnophis couchii,THCO,Adult,1,703541,4366324,2016,July,Bullpen Lake
+Pseudacris regilla,PSRE,Larvae,>100,703541,4366324,2016,July,Bullpen Lake
+Pseudacris regilla,PSRE,Larvae,>100,702633,4366699,2016,July,Unnamed Pond
+Ambystoma macrodactylum sigillatum,AMMASI,Larvae,>100,702633,4366699,2016,July,Unnamed Pond
+Thamnophis couchii,THCO,Adult,1,702633,4366699,2016,July,Unnamed Pond
+Thamnophis couchii,THCO,Adult,1,701749,4366162,2019,July,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,10,701749,4366162,2019,July,Texas Creek North
+Ambystoma macrodactylum sigillatum,AMMASI,Larvae,60,702633,4366699,2019,July,Unnamed Pond
+Pseudacris regilla,PSRE,Larvae,>100,702633,4366699,2019,July,Unnamed Pond
+Pseudacris regilla,PSRE,Larvae,3,701860,4366204,2019,August,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,10,701929,4366042,2019,August,Texas Creek North
+Pseudacris regilla,PSRE,Adult,3,701929,4366042,2019,August,Texas Creek North
+Pseudacris regilla,PSRE,Larvae,>100,702633,4366699,2019,August,Unnamed Pond
+Ambystoma macrodactylum sigillatum,AMMASI,Larvae,>100,702633,4366699,2019,August,Unnamed Pond
+Fairy Shrimp,,Larvae,5,702633,4366699,2019,August,Unnamed Pond
+Thamnophis couchii,THCO,Adult,4,702633,4366699,2019,August,Unnamed Pond
