@@ -39,6 +39,6 @@ vignettes/*.pdf
 .Renviron
 
 # other stuff
-loney_amphib_memo_2019/*.log
-loney_amphib_memo_2019/*.tex
-loney_amphib_memo_2019/*.html
+loney_amphib_memo_2019/*log
+loney_amphib_memo_2019/*tex
+loney_amphib_memo_2019/*html
