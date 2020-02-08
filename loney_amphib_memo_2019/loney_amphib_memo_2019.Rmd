@@ -33,7 +33,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
 # Make sure you have the latest versions of rmarkdown and bookdown installed
-library(ggplot2)
+library(tidyverse)
 # get the bib file
 library(fs)
 fs::file_copy("~/Downloads/bibs/paperpile_amphibs.bib", "paperpile_amphibs.bib", overwrite = TRUE)
@@ -56,6 +56,23 @@ Meadow and stream channel surveys were conducted in Loney Meadow following surve
 ## RESULTS
 
 Surveys for amphibians were conducted in Loney Meadow on July 16 and August 21, 2019 (Table 1). Teams of two or three observers walked along wetted perimeters, stream corridors, and four or more observers were used in wet meadow areas with no clear channel. 
+
+```{r table1, fig.cap="2019 Surveys", echo=FALSE, message=FALSE, error=FALSE}
+
+library(knitr)
+library(kableExtra)
+surveys <- read_csv(paste0(here::here(), "/data/loney_survey_times.csv")) 
+surveys2 <- surveys %>% filter(year==2019) %>% 
+  select(-type, -length_break_min, -amphib_spp_obs, -temp_air_C, -temp_water_C, -day, -year)
+
+kableExtra::kable(surveys2, digits = 2, row.names = F, caption = "2019 Surveys",    
+                  col.names = c("Site", "Start Time", "End Time", 
+                                "Surveyors", "Effort (min)", "Conditions", "Month"))
+
+
+```
+
+
 
 Surveyors expended a total search effort of 10.25 hours on July 25 and 10.25 hours on July 26 at times ranging from mid-morning to early-evening (Table 2).
 

@@ -1,17 +1,17 @@
-﻿site,type,start_time_pst,end_time_pst,no_surveyors,length_break_min,survey_effort_min,weather,year,month,day,temp_air_C,temp_water_C,amphib_spp_obs,,,
-Loney Northwest,meadow,1426,1447,4,,84,"Overcast, sporadic rain",2015,6,10,13.3,12.5,None,,,
-Loney North,meadow,1501,1547,4,15,169,"Overcast, sporadic rain",2015,6,10,25,13.4,PSRE,,,
-Texas Creek North,stream,1600,1718,4,,312,"Overcast, sporadic rain",2015,6,10,26,14.8,PSRE,,,
-Texas Creek South,stream,1055,1347,4,15,548,"Clear, sunny",2015,6,11,22,13.4,PSRE,,,
-Loney Northwest,meadow,2126,2143,4,,126,Clear,2015,6,11,7.8,na,none,,,
-Loney North,meadow,2145,2210,4,,126,Clear,2015,6,11,7.2,na,none,,,
-Loney North,meadow,950,1040,3,20,250,"Clear, Sunny",2016,7,25,,,PSRE,,,
-Texas Creek South ,stream,1320,1400,3,10,200,"Clear, Sunny",2016,7,25,,,none,,,
-Texas Creek North,stream,1422,1500,3,15,190,"Clear, Sunny",2016,7,25,,,PSRE,,,
-Bullpen Lake,pond,1135,1232,3,,291,"Clear, Sunny",2016,7,26,,,PSRE,,,
-Stock Pond,pond,1115,1142,5,,135,"Clear, Sunny",2016,7,25,,,PSRE,,,
-Unnamed Pond,pond,1301,1336,5,,175,"Clear, Sunny",2016,7,26,,,"PSRE, AMMASI, THCO",,,
-Texas Creek North,meadow,1101,1430,7,60,1883,"Clear, Sunny",2019,7,16,,,"THCO, PSRE",,,
-Unnamed Pond,pond,1522,1430,7,10,686,"Clear, Sunny",2019,7,16,,,"PSRE, AMMASI",,,
-Texas Creek North,stream,900,1107,4,10,468,"Clear, Sunny",2019,8,21,,10.6,"PSRE, THEL",,,
-Unnamed Pond,pond,1153,1300,4,,588,"Clear, sunny",2019,8,21,,,"PSRE, AMMASI, THCO",,,
+﻿site,type,start_time_pst,end_time_pst,no_surveyors,length_break_min,survey_effort_min,weather,year,month,day,temp_air_C,temp_water_C,amphib_spp_obs
+Loney Northwest,meadow,1426,1447,4,,84,"Overcast, sporadic rain",2015,6,10,13.3,12.5,None
+Loney North,meadow,1501,1547,4,15,169,"Overcast, sporadic rain",2015,6,10,25,13.4,PSRE
+Texas Creek North,stream,1600,1718,4,,312,"Overcast, sporadic rain",2015,6,10,26,14.8,PSRE
+Texas Creek South,stream,1055,1347,4,15,548,"Clear, sunny",2015,6,11,22,13.4,PSRE
+Loney Northwest,meadow,2126,2143,4,,126,Clear,2015,6,11,7.8,na,none
+Loney North,meadow,2145,2210,4,,126,Clear,2015,6,11,7.2,na,none
+Loney North,meadow,950,1040,3,20,250,"Clear, Sunny",2016,7,25,,,PSRE
+Texas Creek South ,stream,1320,1400,3,10,200,"Clear, Sunny",2016,7,25,,,none
+Texas Creek North,stream,1422,1500,3,15,190,"Clear, Sunny",2016,7,25,,,PSRE
+Bullpen Lake,pond,1135,1232,3,,291,"Clear, Sunny",2016,7,26,,,PSRE
+Stock Pond,pond,1115,1142,5,,135,"Clear, Sunny",2016,7,25,,,PSRE
+Unnamed Pond,pond,1301,1336,5,,175,"Clear, Sunny",2016,7,26,,,"PSRE, AMMASI, THCO"
+Texas Creek North,meadow,1101,1430,7,60,1883,"Clear, Sunny",2019,7,16,,,"THCO, PSRE"
+Unnamed Pond,pond,1522,1430,7,10,686,"Clear, Sunny",2019,7,16,,,"PSRE, AMMASI"
+Texas Creek North,stream,900,1107,4,10,468,"Clear, Sunny",2019,8,21,,10.6,"PSRE, THEL"
+Unnamed Pond,pond,1153,1300,4,,588,"Clear, sunny",2019,8,21,,,"PSRE, AMMASI, THCO"
