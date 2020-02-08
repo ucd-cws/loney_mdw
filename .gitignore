@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# other stuff
+.log
+.tex
+.html
+*_cache/*
