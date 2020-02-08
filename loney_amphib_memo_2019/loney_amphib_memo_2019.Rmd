@@ -1,16 +1,12 @@
 ---
 title: "Loney Meadow Restoration Project Monitoring: Loney Meadow Amphibian Surveys 2019"
 author:
-- familyname: Peek
-  othernames: Ryan
+- familyname: Ryan Peek
+  othernames: Dr
   title: 
-  qualifications: PhD
+  qualifications: Postdoctoral Scholar
   email: rapeek@ucdavis.edu
   correspondingauthor: true
-- familyname: Yarnell
-  othernames: Sarah
-  title: 
-  qualifications: PhD
 department: Center for\newline Watershed Sciences
 organization: SYRCL
 bibliography: paperpile_amphibs.bib
@@ -73,7 +69,12 @@ kableExtra::kable(surveys2, digits = 2, row.names = F, caption = "2019 Surveys",
 ```
 
 
+In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure 2). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed in a small unnamed pond at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the unnamed pond. The only other herpetofauna observed were Sierra and wandering gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
 
-Surveyors expended a total search effort of 10.25 hours on July 25 and 10.25 hours on July 26 at times ranging from mid-morning to early-evening (Table 2).
+```{r, fig2, fig.cap="Map of Species Observations 2015-2019.", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
 
-The majority of the surveys found only Pacific chorus frogs (Pseudacris regilla) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (Ambystoma macrodactylum sigillatum) [AMMASI] larvae were observed in 2016. The AMMASI larvae were observed in a small unnamed pond nestled north of Loney Meadow, at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the pond (see Figure 1). The only other herpetofauna observed were Sierra gartersnakes (Thamnophis couchii) [THCO]. Both of these species were observed in multiple locations within the area, similar to 2015. We also identified brown trout and Eastern brook trout throughout Texas Creek in Loney Meadow.  Nothing was observed in 2015 that was not observed in 2016
+knitr::include_graphics(paste0(here::here(), "/figs/final_map_of_results_2019.pdf"))
+
+```
+
+
