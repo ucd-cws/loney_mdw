@@ -19,7 +19,7 @@ output:
     fig_width: 8
     includes:
       in_header: preamble.tex
-    keep_tex: yes
+    keep_tex: no
     number_sections: no
     citation_package: biblatex
     toc: false
@@ -49,6 +49,25 @@ knitr::include_graphics(paste0(here::here(), "/figs/P1160425.JPG"))
 
 Meadow and stream channel surveys were conducted in Loney Meadow following survey protocols in @Heyer1994-dr. Both day and night surveys were conducted with four surveyors using combined methods such as visual observation, dip netting, and auditory surveys to maximize potential detection of herpetofauna. During each survey, surveyors walked across the meadow at equal intervals, zig-zagging along a transect corresponding to the longest meadow axis. All visible and accessible stream channels were also walked in pairs or in groups of three, with surveyors on each bank and one or two surveyors in the channel. In both the meadow and stream channels, surveyors used dipnets and D-nets to sweep vegetation and aquatic habitat for individuals. Upon observation of species, locations were marked and survey time was stopped during processing and identification. Survey effort was calculated for each survey by the total survey time multiplied by the number of surveyors. Prior to and following surveys, all equipment and field gear was decontaminated following accepted protocols [@Daszak2001-in; @Johnson2003-yc; @Phillott2010-mt].
 
+## SITES
+
+In 2019,  Loney Meadow and several adjacent lentic ponds or lake habitats nearby surveyed (Figure 2). Each site was visited during clear and sunny conditions, and was thoroughly surveyed. The stockpond, Bullpen Lake, and unnamed pond (NE) and (E) did not appear to have changed in structure or condition between visits, and since previous visits in 2016.
+
+```{r fig2, fig.cap="Map of Survey Sites", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
+
+knitr::include_graphics(paste0(here::here(), "/figs/final_map_sites.pdf"))
+
+```
+
+
+```{r, fig3, fig.cap="Lentic unnamed pond east of Loney Meadow", fig.align='center', out.width='50%', message=FALSE, warning=FALSE}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1090924.JPG"))
+
+```
+
+<br>
+
 ## RESULTS
 
 Surveys for amphibians were conducted in Loney Meadow on July 16 and August 21, 2019 (Table 1). Teams of two or three observers walked along wetted perimeters, stream corridors, and four or more observers were used in wet meadow areas with no clear channel. 
@@ -71,9 +90,9 @@ kableExtra::kable(surveys2, digits = 2, row.names = F, caption = "2019 Surveys",
 
 In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure 2). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed in a small unnamed pond at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the unnamed pond. The only other herpetofauna observed were Sierra and wandering gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
 
-```{r, fig2, fig.cap="Map of Species Observations 2015-2019.", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
+```{r, fig4, fig.cap="Map of amphibian species observations 2019.", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
 
-knitr::include_graphics(paste0(here::here(), "/figs/final_map_of_results_2019.pdf"))
+knitr::include_graphics(paste0(here::here(), "/figs/final_map_2019_obs.pdf"))
 
 ```
 
