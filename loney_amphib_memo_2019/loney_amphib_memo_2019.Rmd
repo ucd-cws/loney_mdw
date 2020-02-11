@@ -27,11 +27,17 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+knitr::opts_chunk$set(eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
 # Make sure you have the latest versions of rmarkdown and bookdown installed
-library(tidyverse)
-# get the bib file
-library(fs)
+
+suppressPackageStartupMessages({
+  library(tidyverse);
+  library(knitr);
+  library(kableExtra);
+  library(fs)
+})
+  
+# get the bib file and copy to local folder of Rmd
 fs::file_copy("~/Downloads/bibs/paperpile_amphibs.bib", "paperpile_amphibs.bib", overwrite = TRUE)
 
 ```
@@ -41,7 +47,7 @@ fs::file_copy("~/Downloads/bibs/paperpile_amphibs.bib", "paperpile_amphibs.bib",
 
 Loney Meadow and the surrounding meadow complex were surveyed for the presence of amphibian species of interest as part of a larger effort to document habitat conditions in the Loney Meadow area prior/post to stream bank restoration activities.  Surveys were conducted throughout Loney Meadow and adjacent wetland meadow complexes to determine presence and life stages of amphibian species. Observations were compared across surveys from pre and post stream bank restoration activities. Repeat visual encounter surveys were conducted prior to restoration in June of 2015 and July of 2016, and post restoration in July and August of 2019. 
 
-```{r, fig1, fig.cap="Surveys in Main Meadow", fig.align='center', out.width='50%', message=FALSE, warning=FALSE}
+```{r, fig1, fig.cap="Surveys in Main Meadow", fig.align='center', out.width='70%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/P1160425.JPG"))
 
@@ -51,49 +57,88 @@ Meadow and stream channel surveys were conducted in Loney Meadow following surve
 
 ## SITES
 
-In 2019,  Loney Meadow and several adjacent lentic ponds or lake habitats nearby surveyed (Figure 2). Each site was visited during clear and sunny conditions, and was thoroughly surveyed. The stockpond, Bullpen Lake, and unnamed pond (NE) and (E) did not appear to have changed in structure or condition between visits, and since previous visits in 2016.
+In 2019, Loney Meadow and several adjacent lentic ponds or lake habitats nearby surveyed (Figure \@ref(fig:fig1), Figure \@ref(fig:fig2)). Each site was visited during clear and sunny conditions, and was thoroughly surveyed. The stockpond, Bullpen Lake, and unnamed pond (NE) and (E) did not appear to have changed in structure or condition between visits, and since previous visits in 2016.
 
-```{r fig2, fig.cap="Map of Survey Sites", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
+```{r fig2, fig.cap="Map of Survey Sites", fig.align='center', out.width='100%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/final_map_sites.pdf"))
 
 ```
 
+For example, the unnamed pond east of Loney Meadow appears to remain largely permanent, though the water levels fluctuate depending on the month surveyed (see Figure \@ref(fig:fig3) and Figure \@ref(fig:fig4)).
 
-```{r, fig3, fig.cap="Lentic unnamed pond east of Loney Meadow", fig.align='center', out.width='50%', message=FALSE, warning=FALSE}
+```{r, fig3, fig.cap="Lentic unnamed pond east of Loney Meadow in 2019", fig.align='center', out.width='70%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/P1090924.JPG"))
 
 ```
 
-<br>
+
+```{r, fig4, fig.cap="Lentic unnamed pond east of Loney Meadow in 2016", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1080273.JPG"))
+
+```
+
 
 ## RESULTS
 
 Surveys for amphibians were conducted in Loney Meadow on July 16 and August 21, 2019 (Table 1). Teams of two or three observers walked along wetted perimeters, stream corridors, and four or more observers were used in wet meadow areas with no clear channel. 
 
-```{r table1, fig.cap="2019 Surveys", echo=FALSE, message=FALSE, error=FALSE}
+```{r table1, fig.cap="2019 Surveys", message=FALSE}
 
-library(knitr)
-library(kableExtra)
 surveys <- read_csv(paste0(here::here(), "/data/loney_survey_times.csv")) 
 surveys2 <- surveys %>% filter(year==2019) %>% 
   select(-type, -length_break_min, -amphib_spp_obs, -temp_air_C, -temp_water_C, -day, -year)
 
-kableExtra::kable(surveys2, digits = 2, row.names = F, caption = "2019 Surveys",    
+kableExtra::kable(surveys2, digits = 2, row.names = F, 
+                  caption = "2019 Surveys",    
                   col.names = c("Site", "Start Time", "End Time", 
-                                "Surveyors", "Effort (min)", "Conditions", "Month"))
+                                "Surveyors", "Effort (min)", 
+                                "Conditions", "Month"))
 
 
 ```
 
+### Amphibians
 
-In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure 2). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed in a small unnamed pond at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the unnamed pond. The only other herpetofauna observed were Sierra and wandering gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
+In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure \@ref(fig:fig3). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed in a small unnamed pond at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the unnamed pond. The only other herpetofauna observed were Sierra and mountain gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
 
-```{r, fig4, fig.cap="Map of amphibian species observations 2019.", fig.align='center', out.width='100%', message=FALSE, warning=FALSE}
+```{r, fig5, fig.cap="Map of amphibian species observations 2019.", fig.align='center', out.width='100%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/final_map_2019_obs.pdf"))
 
 ```
 
 
+```{r table2, fig.cap="2019 Observations", echo=FALSE, message=FALSE, error=FALSE}
+
+survobs <- read_csv(paste0(here::here(), "/data/loney_survey_observations.csv")) 
+survobs <- survobs %>% filter(Year==2019) %>% select(-Site, -Year)
+
+kableExtra::kable(survobs, digits = 2, row.names = F, 
+                  caption = "2019 Observations",    
+                  col.names = c("Species", "Species Code","Stage",
+                                "No. Obs", "UTM E", "UTM N", 
+                                "Month"), longtable = TRUE) %>% 
+  row_spec(row = 0, bold = TRUE, hline_after = TRUE) %>% kable_styling()
+
+
+```
+
+\pagebreak
+
+### Additional Observations
+
+
+In addition to herpetofauna observed in 2019, we observed spinytail fairy shrimp (*Streptocephalus sealli*) (see @Dexter1956-yl) in the unnamed pond (NE). Several of these shrimp were observed in the pond along the margins in the same areas the Long-toed salamanders were observed (Figure \@ref(fig:fig6)). 
+
+
+```{r, fig6, fig.cap="Spinytail fairy shrimp", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1160476.JPG"))
+
+```
+
+
+<br>
