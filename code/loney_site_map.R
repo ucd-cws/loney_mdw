@@ -462,3 +462,29 @@ ggmap(map_sat) +
 ggsave(filename = "figs/final_map_2019_obs.png", width = 7, height = 5.5, units = "in", dpi=300, scale = 1.1)
 ggsave(filename = "figs/final_map_2019_obs.pdf", device=cairo_pdf,width = 7, height = 5.5, units = "in", scale=1.1)
 
+
+# Calculate Distances between Points --------------------------------------
+
+# data
+load("data/loney_all_sf_objs.rda")
+
+st_crs(loney_polys)
+library(units)
+
+# fix and add centroid for labeling
+loney_polys <- loney_polys %>% 
+  mutate(lon = map_dbl(geometry, ~st_centroid(.x)[[1]]),
+         lat = map_dbl(geometry, ~st_centroid(.x)[[2]]))
+
+# make centroid points for measurement, otherwise measures from edge of polygon
+poly_cnts <- loney_polys %>% st_drop_geometry() %>% select(featID, lon, lat) %>%
+  sf::st_as_sf(., coords=c("lon","lat"), remove=FALSE, crs=4326) %>% 
+  mutate(dist_to_loney=st_distance(geometry, .$geometry[1], by_element=TRUE),
+         dist_to_loney=set_units(dist_to_loney, 'miles'))
+
+# double check
+
+m2dist <- mapview(loney_polys, col.regions="transparent") +
+  mapview(poly_cnts, col.regions="yellow", cex=5)
+
+m2dist@map %>% leaflet::addMeasure(primaryLengthUnit = "miles")

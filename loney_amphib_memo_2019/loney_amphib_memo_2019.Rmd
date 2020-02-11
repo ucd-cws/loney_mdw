@@ -19,7 +19,7 @@ output:
     fig_width: 8
     includes:
       in_header: preamble.tex
-    keep_tex: no
+    keep_tex: yes
     number_sections: no
     citation_package: biblatex
     toc: false
@@ -45,7 +45,7 @@ fs::file_copy("~/Downloads/bibs/paperpile_amphibs.bib", "paperpile_amphibs.bib",
 
 ## OVERVIEW
 
-Loney Meadow and the surrounding meadow complex were surveyed for the presence of amphibian species of interest as part of a larger effort to document habitat conditions in the Loney Meadow area prior/post to stream bank restoration activities.  Surveys were conducted throughout Loney Meadow and adjacent wetland meadow complexes to determine presence and life stages of amphibian species. Observations were compared across surveys from pre and post stream bank restoration activities. Repeat visual encounter surveys were conducted prior to restoration in June of 2015 and July of 2016, and post restoration in July and August of 2019. 
+Loney Meadow and the surrounding meadow complex were surveyed for the presence of amphibian species of interest as part of amphibian monitoring in the Loney Meadow area prior/post to stream bank restoration activities.  Surveys were conducted throughout Loney Meadow and at several adjacent lentic features to determine presence and life stages of sensitive amphibian species. Observations were compared across surveys from pre and post meadow restoration activities. Repeat visual encounter surveys were conducted prior to restoration in June of 2015 and July of 2016, and post restoration surveys were conducted in July and August of 2019. 
 
 ```{r, fig1, fig.cap="Surveys in Main Meadow", fig.align='center', out.width='70%'}
 
@@ -53,11 +53,13 @@ knitr::include_graphics(paste0(here::here(), "/figs/P1160425.JPG"))
 
 ```
 
-Meadow and stream channel surveys were conducted in Loney Meadow following survey protocols in @Heyer1994-dr. Both day and night surveys were conducted with four surveyors using combined methods such as visual observation, dip netting, and auditory surveys to maximize potential detection of herpetofauna. During each survey, surveyors walked across the meadow at equal intervals, zig-zagging along a transect corresponding to the longest meadow axis. All visible and accessible stream channels were also walked in pairs or in groups of three, with surveyors on each bank and one or two surveyors in the channel. In both the meadow and stream channels, surveyors used dipnets and D-nets to sweep vegetation and aquatic habitat for individuals. Upon observation of species, locations were marked and survey time was stopped during processing and identification. Survey effort was calculated for each survey by the total survey time multiplied by the number of surveyors. Prior to and following surveys, all equipment and field gear was decontaminated following accepted protocols [@Daszak2001-in; @Johnson2003-yc; @Phillott2010-mt].
+## METHODS
+
+Meadow and stream channel surveys were conducted in Loney Meadow following survey protocols in @Heyer1994-dr. Both day and night surveys were conducted with four surveyors using combined methods such as visual observation, dip netting, and auditory surveys to maximize potential detection of herpetofauna. During each survey, surveyors walked across the meadow at equal intervals, zig-zagging along a transect corresponding to the longest meadow axis. All visible and accessible stream channels were also walked in pairs or in groups of three, with surveyors on each bank and one or two surveyors in the channel. In both the meadow and stream channels, surveyors used dipnets and D-nets to sweep vegetation and aquatic habitat for individuals. Upon observation of species, locations were marked and survey time was stopped during processing and identification. Survey effort was calculated for each survey by the total survey time multiplied by the number of surveyors. Prior to and following surveys, all equipment and field gear was decontaminated following accepted protocols [@Daszak2001-in; @Johnson2003-yc; @Phillott2010-mt]. All analysis and mapping was conducted in R using `tidyverse`, `sf` and `ggmap` packages [@Kahle2013-rh; @Pebesma2018-vd; @R_Core_Team2019-pk; @Wickham2019-zw].
 
 ## SITES
 
-In 2019, Loney Meadow and several adjacent lentic ponds or lake habitats nearby surveyed (Figure \@ref(fig:fig1), Figure \@ref(fig:fig2)). Each site was visited during clear and sunny conditions, and was thoroughly surveyed. The stockpond, Bullpen Lake, and unnamed pond (NE) and (E) did not appear to have changed in structure or condition between visits, and since previous visits in 2016.
+In 2019, Loney Meadow and several adjacent lentic ponds or lake habitats were surveyed during July and August (Figure \@ref(fig:fig1), Figure \@ref(fig:fig2)). Each site was visited during clear and sunny conditions. The stockpond, Bullpen Lake, and unnamed pond (NE) and (E) did not appear to have changed in structure or condition between visits, and since previous visits in 2016.
 
 ```{r fig2, fig.cap="Map of Survey Sites", fig.align='center', out.width='100%'}
 
@@ -65,16 +67,17 @@ knitr::include_graphics(paste0(here::here(), "/figs/final_map_sites.pdf"))
 
 ```
 
-For example, the unnamed pond east of Loney Meadow appears to remain largely permanent, though the water levels fluctuate depending on the month surveyed (see Figure \@ref(fig:fig3) and Figure \@ref(fig:fig4)).
+The ponds surveyed surrounding Loney Meadow appear to remain largely permanent, though the water levels fluctuate depending on the month surveyed (see Figure \@ref(fig:fig3) and Figure \@ref(fig:fig4)). These habitats may provide refugia and suitable sources for amphibian populations, and occur within distances feasible for amphibian movement. Centroid distance from **Loney Meadow** to **Bullpen Lake** is approximately 0.98 miles, while centroid distance between Loney Meadow and the **Unnamed Pond - East** is 0.55 miles.
 
-```{r, fig3, fig.cap="Lentic unnamed pond east of Loney Meadow in 2019", fig.align='center', out.width='70%'}
 
-knitr::include_graphics(paste0(here::here(), "/figs/P1090924.JPG"))
+```{r, fig3, fig.cap="Lentic unnamed pond east of Loney Meadow in August 2019, looking southeast", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1160447.JPG"))
 
 ```
 
 
-```{r, fig4, fig.cap="Lentic unnamed pond east of Loney Meadow in 2016", fig.align='center', out.width='70%'}
+```{r, fig4, fig.cap="Lentic unnamed pond east of Loney Meadow in July 2016, looking southeast", fig.align='center', out.width='70%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/P1080273.JPG"))
 
@@ -102,7 +105,7 @@ kableExtra::kable(surveys2, digits = 2, row.names = F,
 
 ### Amphibians
 
-In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure \@ref(fig:fig3). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed in a small unnamed pond at an elevation approximately 100 meters higher than Loney Meadow. There was no evidence of grazing or cattle at the unnamed pond. The only other herpetofauna observed were Sierra and mountain gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
+In 2019, surveys found primarily Pacific chorus frogs (*Pseudacris regilla*) [PSRE] in multiple life stages (eggs, tadpoles and adults were observed), however, Southern long-toed salamanders (*Ambystoma macrodactylum sigillatum*) [AMMASI] larvae were observed again in the small pond just northeast of the main Loney Meadow (Figure \@ref(fig:fig3) and Figure \@ref(fig:fig5)). This is the same location they were observed in 2016 as well. The AMMASI larvae were observed at an elevation approximately 100 meters higher than Loney Meadow, and have consistently been observed at this site since 2016. No other site at or near Loney Meadow has detected AMMASI. There was no evidence of grazing or cattle at the unnamed pond. Additional herpetofauna observed in 2019 included Sierra and mountain gartersnakes (*Thamnophis couchii* [THCO] and *Thamnophis elegans elegans* [THEL]). Both of these species were observed in multiple locations within the area, similar to 2015 and 2016. There were no new species observed in 2019 that were not observed in 2015 or 2016.
 
 ```{r, fig5, fig.cap="Map of amphibian species observations 2019.", fig.align='center', out.width='100%'}
 
@@ -128,17 +131,43 @@ kableExtra::kable(survobs, digits = 2, row.names = F,
 
 \pagebreak
 
+```{r, fig6, fig.cap="Pacific chorus frog in unnamed pond (northeast)", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1160459.JPG"))
+
+```
+
+
+```{r, fig7, fig.cap="Sierra garter snake in Loney Meadow", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1090885.JPG"))
+
+```
+
+
+```{r, fig8, fig.cap="Southern long-toed salamander larvae in unnamed pond (northeast)", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(), "/figs/P1160474.JPG"))
+
+```
+
+
 ### Additional Observations
 
 
-In addition to herpetofauna observed in 2019, we observed spinytail fairy shrimp (*Streptocephalus sealli*) (see @Dexter1956-yl) in the unnamed pond (NE). Several of these shrimp were observed in the pond along the margins in the same areas the Long-toed salamanders were observed (Figure \@ref(fig:fig6)). 
+In addition to herpetofauna observed in 2019, we observed spinytail fairy shrimp (*Streptocephalus sealli*) (see @Dexter1956-yl) in the unnamed pond (NE). Several of these shrimp were observed in the pond along the margins in the same areas the Southern long-toed salamanders were observed (Figure \@ref(fig:fig9)). These species are not listed and and are the most widely distributed fairy shrimp in North America [@Eriksen1999-qk]. Fairy shrimps are well adapted to occurring in habitats that may dessicate via a reproductive strategy which uses cysts. Cysts are highly resistant and stable "eggs" by which fairy shrimps reproduce or hatch into nauplii. Interestingly, fairy shrimps are a common prey item of salamanders [@Eriksen1999-qk]. In addition the cysts can be successfully passed through salamander and crayfish digestive systems and remain viable, thus predation does not end the life-cycle of the fairy shrimp [@Eriksen1999-qk].
 
 
-```{r, fig6, fig.cap="Spinytail fairy shrimp", fig.align='center', out.width='70%'}
+```{r, fig9, fig.cap="Spinytail fairy shrimp at unnamed pond (NE)", fig.align='center', out.width='70%'}
 
 knitr::include_graphics(paste0(here::here(), "/figs/P1160476.JPG"))
 
 ```
 
 
-<br>
+```{r, fig10, fig.cap="Spinytail fairy shrimp in unnamed pond (NE)", fig.align='center', out.width='70%'}
+
+knitr::include_graphics(paste0(here::here(),"/figs/P1160481.jpg"))
+
+```
+
