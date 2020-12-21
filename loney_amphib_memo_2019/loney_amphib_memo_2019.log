@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.7)  7 FEB 2020 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.8)  11 FEB 2020 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **loney_amphib_memo_2019.tex
 (./loney_amphib_memo_2019.tex
-LaTeX2e <2020-02-02>
+LaTeX2e <2020-02-02> patch level 1
 L3 programming layer <2020-02-03> (/Users/ryanpeek/Library/TinyTeX/texmf-dist/t
 ex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -148,7 +148,7 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 (/Users/ryanpeek/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0m Standard LaTeX package
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )) (/Users/ryanpeek/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.st
 y
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
@@ -1111,7 +1111,7 @@ cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<CWSAltDesign.pdf, id=12, 204.765pt x 268.48306pt>
+<CWSAltDesign.pdf, id=27, 204.765pt x 268.48306pt>
 File: CWSAltDesign.pdf Graphic file (type pdf)
 <use CWSAltDesign.pdf>
 Package pdftex.def Info: CWSAltDesign.pdf  used on input line 296.
@@ -1381,28 +1381,117 @@ Overfull \hbox (56.23262pt too wide) detected at line 296
 
 {/Users/ryanpeek/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map} 
 <./CWSAltDesign.pdf>]
-</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160425.jpg, id=30, 1606.0pt 
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160425.jpg, id=45, 1606.0pt 
 x 1072.808pt>
 File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160425.jpg Graphic file
  (type jpg)
 <use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160425.jpg>
 Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
 25.jpg  used on input line 305.
-(pdftex.def)             Requested size: 227.62204pt x 152.04187pt.
+(pdftex.def)             Requested size: 318.66946pt x 212.87172pt.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 10.51207pt on input line 309.
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 (Font)              scaled to size 10.51207pt on input line 309.
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.24173pt on input line 315.
 [2 </Users/ryanpeek/Documents/github/loney_mdw/figs/P1160425.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_sites.pdf, id=76, 55
+0.72308pt x 299.13016pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_sites.pdf Graph
+ic file (type pdf)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_sites.pdf>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/final_
+map_sites.pdf  used on input line 324.
+(pdftex.def)             Requested size: 455.24408pt x 247.26924pt.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160447.jpg, id=79, 1606.0pt 
+x 1072.808pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160447.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160447.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
+47.jpg  used on input line 335.
+(pdftex.def)             Requested size: 318.66946pt x 212.87172pt.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1080273.jpg, id=80, 1606.0pt 
+x 1204.5pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1080273.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1080273.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P10802
+73.jpg  used on input line 344.
+(pdftex.def)             Requested size: 318.66946pt x 239.00267pt.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 9.24173pt on input line 376.
+[3 </Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_sites.pdf>] [4 </
+Users/ryanpeek/Documents/github/loney_mdw/figs/P1160447.jpg> </Users/ryanpeek/D
+ocuments/github/loney_mdw/figs/P1080273.jpg>]
+</Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_2019_obs.pdf, id=119
+, 555.0659pt x 311.97536pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_2019_obs.pdf Gr
+aphic file (type pdf)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_2019_obs.pdf>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/final_
+map_2019_obs.pdf  used on input line 382.
+(pdftex.def)             Requested size: 455.24408pt x 255.86905pt.
+
+Overfull \hbox (50.14699pt too wide) in alignment at lines 389--417
+ [] [] [] [] [] [] [] 
+ []
+
+[5 </Users/ryanpeek/Documents/github/loney_mdw/figs/final_map_2019_obs.pdf>]
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160459.jpg, id=150, 1606.0pt
+ x 1204.5pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160459.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160459.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
+59.jpg  used on input line 423.
+(pdftex.def)             Requested size: 318.66946pt x 239.00267pt.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1090885.jpg, id=151, 1606.0pt
+ x 1204.5pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1090885.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1090885.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P10908
+85.jpg  used on input line 432.
+(pdftex.def)             Requested size: 318.66946pt x 239.00267pt.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160474.jpg, id=152, 1606.0pt
+ x 1204.5pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160474.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160474.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
+74.jpg  used on input line 441.
+(pdftex.def)             Requested size: 318.66946pt x 239.00267pt.
+[6 </Users/ryanpeek/Documents/github/loney_mdw/figs/P1160459.jpg> </Users/ryanp
+eek/Documents/github/loney_mdw/figs/P1090885.jpg>]
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160476.jpg, id=169, 1606.0pt
+ x 1204.5pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160476.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160476.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
+76.jpg  used on input line 455.
+(pdftex.def)             Requested size: 318.66946pt x 239.00267pt.
+</Users/ryanpeek/Documents/github/loney_mdw/figs/P1160481.jpg, id=170, 2057.687
+5pt x 1080.035pt>
+File: /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160481.jpg Graphic file
+ (type jpg)
+<use /Users/ryanpeek/Documents/github/loney_mdw/figs/P1160481.jpg>
+Package pdftex.def Info: /Users/ryanpeek/Documents/github/loney_mdw/figs/P11604
+81.jpg  used on input line 464.
+(pdftex.def)             Requested size: 318.66946pt x 167.25537pt.
+[7 </Users/ryanpeek/Documents/github/loney_mdw/figs/P1160474.jpg> </Users/ryanp
+eek/Documents/github/loney_mdw/figs/P1160476.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
+[8 </Users/ryanpeek/Documents/github/loney_mdw/figs/P1160481.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
 (./loney_amphib_memo_2019.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 473.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
 Package rerunfilecheck Info: File `loney_amphib_memo_2019.out' has not changed.
 
-(rerunfilecheck)             Checksum: FB5B20A16854CDFBCFA7990F9D19DE0E;166.
+(rerunfilecheck)             Checksum: 984554C50239BC21C69C47E361FA87C3;621.
 
 LaTeX Warning: There were undefined references.
 
@@ -1413,31 +1502,32 @@ Package biblatex Warning: Please rerun LaTeX.
 Package logreq Info: Writing requests to 'loney_amphib_memo_2019.run.xml'.
 \openout1 = `loney_amphib_memo_2019.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 473.
  ) 
 Here is how much of TeX's memory you used:
- 26147 strings out of 483167
- 431123 string characters out of 5964373
- 1091713 words of memory out of 5000000
- 40584 multiletter control sequences out of 15000+600000
- 629073 words of font info for 214 fonts, out of 8000000 for 9000
+ 26333 strings out of 483169
+ 437407 string characters out of 5964392
+ 1102909 words of memory out of 5000000
+ 40692 multiletter control sequences out of 15000+600000
+ 635842 words of font info for 247 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,14n,90p,2204b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}
-{/Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Users
+ 52i,14n,107p,2204b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Use
+rs/ryanpeek/Library/TinyTeX/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{/Users
 /ryanpeek/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo
 .enc}</Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/type1/public/fontawesome
 /FontAwesome.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/type1/bitstr
 ea/charter/bchb8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/type1/b
 itstrea/charter/bchr8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fonts/ty
 pe1/bitstrea/charter/bchri8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fo
+nts/type1/public/bera/fvmr8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fo
 nts/type1/public/bera/fvsb8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fo
 nts/type1/public/bera/fvsr8a.pfb></Users/ryanpeek/Library/TinyTeX/texmf-dist/fo
 nts/type1/public/mathdesign/mdbch/md-chr8t.pfb>
-Output written on loney_amphib_memo_2019.pdf (3 pages, 5204362 bytes).
+Output written on loney_amphib_memo_2019.pdf (8 pages, 37307703 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 30747 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 30824 words of extra memory for PDF output out of 35830 (max. 10000000)
 

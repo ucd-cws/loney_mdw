@@ -10,18 +10,18 @@ library(sf)
 library(mapview)
 library(mapedit)
 library(leafpm)
-#library(tmap)
-#library(tmaptools)
+library(tmap)
+library(tmaptools)
 
 # data packages
-#library(FedData)
-#library(tidycensus)
-#library(tigris)
+library(FedData)
+library(tidycensus)
+library(tigris)
 #library(rnaturalearth)
 #library(osmdata) 
-#library(rnoaa) 
-#library(getlandsat)
-#library(hddtools) # hydrologic data
+library(rnoaa) 
+library(getlandsat)
+library(hddtools) # hydrologic data
 
 # see here: https://www.r-spatial.org/r/2018/03/23/stars3.html
 # library(RGISTools)
